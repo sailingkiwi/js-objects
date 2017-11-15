@@ -283,8 +283,18 @@ var arrayOfObjects = [
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` 
         to inspect your results.
 */
+var sumObj = {
+a: 8,
+b: 12,
+result: undefined
+};
 
+function objectAddition(obj){
+  obj.result = obj.a + obj.b;
+  return obj;
+}
 
+console.log(objectAddition(sumObj));
 /*
 9. Print sum function and add as new key-value
    Declare a new function named printObj and a single parameter which will be the object from the challenge just above. 
