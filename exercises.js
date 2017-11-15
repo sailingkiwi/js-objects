@@ -311,7 +311,12 @@ console.log(objectAddition(sumObj));
         Invoke this function and pass in your object. Further test by changing the values of the object being passed in or 
         **create more** objects and invoke your function multiple times.
  */
+function printObj(obj){
+  obj.result = obj.a + obj.b;
+    return obj.a + " + " + obj.b + " = " + "" + obj.result;
 
+}
+ console.log(printObj(sumObj));
 
 /*
 10. Putting stuff in `plainBox`
